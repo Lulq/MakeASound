@@ -30,6 +30,20 @@ la = mixer.Sound("A.wav")
 la_s = mixer.Sound("a#.wav")
 si = mixer.Sound("B.wav")
 
+do5 = mixer.Sound("C5.wav")
+do5_s = mixer.Sound("c5#.wav")
+re5 = mixer.Sound("D5.wav")
+re5_s = mixer.Sound("d5#.wav")
+mi5 = mixer.Sound("E5.wav")
+fa5 = mixer.Sound("F5.wav")
+fa5_s = mixer.Sound("f5#.wav")
+sol5 = mixer.Sound("G5.wav")
+sol5_s = mixer.Sound("g5#.wav")
+la5 = mixer.Sound("A5.wav")
+la5_s = mixer.Sound("a5#.wav")
+si5 = mixer.Sound("B5.wav")
+
+
 
 while True:
     pygame.draw.rect(DISPLAY,retColor,(250,150,10,30), 1)
@@ -62,6 +76,34 @@ while True:
                 mixer.Sound.play(la_s)
             elif event.key == K_u:
                 mixer.Sound.play(si)
+            # segunda oitava c5 a b5
+            if event.key == K_v:
+                mixer.Sound.play(do5)
+            elif event.key == K_g:
+                mixer.Sound.play(do5_s)
+            elif event.key == K_b:
+                mixer.Sound.play(re5)
+            elif event.key == K_h:
+               mixer.Sound.play(re5_s)
+            elif event.key == K_n:
+                mixer.Sound.play(mi5)
+            elif event.key == K_m:
+                mixer.Sound.play(fa5)
+            elif event.key == K_k:
+                mixer.Sound.play(fa5_s)
+            elif event.key == K_COMMA:
+                mixer.Sound.play(sol5)
+            elif event.key == K_l:
+                mixer.Sound.play(sol5_s)
+            elif event.key == K_PERIOD:
+                mixer.Sound.play(la5)
+            elif event.key == K_RCTRL:
+                mixer.Sound.play(la5_s)
+            elif event.key == K_SEMICOLON:
+                mixer.Sound.play(si5)
+
+
+        #Stop Sound
 
         if event.type == KEYUP:
             if event.key == K_q:
@@ -88,6 +130,31 @@ while True:
                 mixer.Sound.stop(la_s)
             if event.key == K_u:
                 mixer.Sound.stop(si)
+            # segunda oitava c5 a b5
+            if event.key == K_v:
+                mixer.Sound.stop(do5)
+            if event.key == K_g:
+                mixer.Sound.stop(do5_s)
+            if event.key == K_b:
+                mixer.Sound.stop(re5)
+            if event.key == K_h:
+               mixer.Sound.stop(re5_s)
+            if event.key == K_n:
+                mixer.Sound.stop(mi5)
+            if event.key == K_m:
+                mixer.Sound.stop(fa5)
+            if event.key == K_k:
+                mixer.Sound.stop(fa5_s)
+            if event.key == K_COMMA:
+                mixer.Sound.stop(sol5)
+            if event.key == K_l:
+                mixer.Sound.stop(sol5_s)
+            if event.key == K_PERIOD:
+                mixer.Sound.stop(la5)
+            if event.key == K_RCTRL:
+                mixer.Sound.stop(la5_s)
+            if event.key == K_SEMICOLON:
+                mixer.Sound.stop(si5)
             
                 
     
